@@ -11,7 +11,7 @@
 	       	<md-content flex="90" id="message-pane" style="width:800px; background: url(http://my-smashing.smashingapps.netdna-cdn.com/wp-content/uploads/2013/04/abstractbackground40.jpg); background-size:cover; background-position:center; background-repeat:no-repeat; ">
 	       	
 	       	<div  ng-repeat="message in messages" layout="column" layout-align="{{message.sender=='BOT' ? 'start start' : 'start end'}}">
-	       		<md-card style="max-width:75% ;border-radius: 10px; padding: 10px; font-size: 14px;" ng-style="message.sender=='BOT' ?
+	       		<md-card style="max-width:75% ;border-radius: 10px; padding: 10px; font-size: 14px; font-family:Courier;" ng-style="message.sender=='BOT' ?
 	       		{'background-color':'#93c5ff'}:
 	       		{'background-color':'#c92080'};">
 	       		<span>{{message.text}}</span>
